@@ -1,0 +1,371 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:th="http://www.w3.org/1999/xhtml">
+<head>
+</head>
+
+<body>
+
+<div>
+
+    <table cellpadding="0" cellspacing="0" border="0" align="center"
+           width="600"
+           style="color: #000000; margin: auto; line-height: 1.2; border: #efefef 1px solid; border-bottom: #3b669a 4px solid">
+        <tbody>
+        <tr>
+            <td align="right" style="padding: 30px 30px 40px 0">
+                <img style="display: block"
+                     src="https://ci4.googleusercontent.com/proxy/p0cb1UjsDuo-wYR3CZ7eXttnUcfjY00CI6nW7jOCOX4NrD_jUKgrUvLJVpl6jPo7Cjmi5Nw7FE-Gdqh5uGYP07IDV-uAdaW7o1VdkB0atLPEOsYXYt6Tw20sVaos7xBGrlHf6usi3ux9VRrL3JsYZeU_C1ICL7ExHKRowUEPufJPCZ-cfIOkIfwC21BbhpbtiaLH1nPzkt5wjiWiJA=s0-d-e1-ft#https://firebasestorage.googleapis.com/v0/b/servidor-de-img.appspot.com/o/a-logo.PNG?alt=media&amp;token=28205d9d-e38f-4768-854a-e93bd8bdc149"
+                     alt="Tarjeta OH" border="0"></td>
+        </tr>
+
+        <tr>
+            <td bgcolor="#FFFFFF" align="left"
+                style="padding: 0 10px 0 10px; font-size: 22px; color: #3f3d69; padding: 20px 40px 0 40px">
+						<span
+                                style="font-family: 'Arial', Helvetica, sans-serif; font-weight: bold">
+							Los empleos más atractivos de esta semana </span>
+            </td>
+        </tr>
+
+        <tr>
+            <td align="left"
+                style="font-family: 'SF UI Light', Helvetica, sans-serif; color: #657786; font-size: 14px; padding: 25px 40px 20px 40px">
+                Hemos seleccionado este grupo de empleos que estamos seguros te
+                interesarán, cada uno fue seleccionado según tus intereses,
+                carrera, ciclo, edad, ubicación de residencia y algo de
+                presentimiento de nuestro algoritmo, recuerda que estas
+                convocatorias podrían estar cerradas en el momento que leas este
+                correo, así que recuerda siempre leer el boletín más reciente y
+                participar ASAP en ellos.</td>
+        </tr>
+
+        <tr>
+            <td align="left"
+                style="font-family: 'SF UI Light', Helvetica, sans-serif; color: #657786; font-size: 14px;">
+                <table cellspacing="40" align="center" width="100%">
+                    <tbody>
+                    <tr >
+                        <td width="50%" th:each="empleo,iter : ${empleos}" th:if="${iter.index ==0 || iter.index==1}">
+                            <table  align="center" width="100%"
+                                    style="border: 1px solid #f5f5f5; border-radius: 10px">
+                                <tbody>
+                                <tr>
+                                    <td align="right"
+                                        style="color: #657786; font-size: 12px; padding: 15px 20px 25px 20px"th:text="${empleo.tipo}"></td>
+                                </tr>
+                                <tr>
+                                    <td align="center">
+
+                                        <img style="width:200px"
+                                             th:src="'cid:'+${empleo.oid}"
+                                             alt="" />
+
+
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td align="center"
+                                        style="font-size: 13px; text-align: center; color: #3f3d69; font-size: 16px; padding: 20px 0">
+                                        <b> <span th:text="${empleo.puesto}"></span></b>
+                                    </td>
+                                </tr>
+
+                                <tr>
+                                    <td align="left"
+                                        style="font-size: 13px; text-align: left; color: #3f3d69; font-size: 14px; padding: 20px 20px 10px 20px">
+                                        <b> <span th:text="${empleo.empleador}"></span>
+                                        </b>
+                                    </td>
+                                </tr>
+
+                                <tr>
+                                    <td align="left"
+                                        style="font-size: 13px; text-align: left; color: #657786; font-size: 13px; padding: 10px 20px; line-height: 22px">
+                                        <span th:text="${empleo.direccion}"></span> <br></br>
+                                        <span th:text="${empleo.cierre}"></span>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td align="center"
+                                        style="padding-bottom: 30px; padding-right: 20px">
+                                        <div
+                                                style="background: #fff; color: #3b669a; font-family: 'Arial', Helvetica, sans-serif; font-size: 14px; height: 34px; line-height: 34px; border-radius: 26px; width: 120px; border: 1px solid #3b669a; float: right">
+                                            <a href="https://quipucamayoc.unmsm.edu.pe/PortalEmpleo/#/login/alumno"
+                                               style="text-decoration: none; font-size: 14px; display: block !important; color: #3b669a; font-weight: bold; height: 34px; line-height: 34px">
+                                                Leer más </a>
+                                        </div>
+                                    </td>
+                                </tr>
+
+                                </tbody>
+                            </table>
+
+                        </td>
+                    </tr>
+                    <tr >
+                        <td width="50%" th:each="empleo,iter : ${empleos}" th:if="${iter.index ==2 || iter.index==3}">
+                            <table  align="center" width="100%"
+                                    style="border: 1px solid #f5f5f5; border-radius: 10px">
+                                <tbody>
+                                <tr>
+                                    <td align="right"
+                                        style="color: #657786; font-size: 12px; padding: 15px 20px 25px 20px"th:text="${empleo.tipo}"></td>
+                                </tr>
+                                <tr>
+                                    <td align="center">
+
+                                        <img style="width:200px"
+                                             th:src="'cid:'+${empleo.oid}"
+                                             alt="" />
+
+
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td align="center"
+                                        style="font-size: 13px; text-align: center; color: #3f3d69; font-size: 16px; padding: 20px 0">
+                                        <b> <span th:text="${empleo.puesto}"></span></b>
+                                    </td>
+                                </tr>
+
+                                <tr>
+                                    <td align="left"
+                                        style="font-size: 13px; text-align: left; color: #3f3d69; font-size: 14px; padding: 20px 20px 10px 20px">
+                                        <b> <span th:text="${empleo.empleador}"></span>
+                                        </b>
+                                    </td>
+                                </tr>
+
+                                <tr>
+                                    <td align="left"
+                                        style="font-size: 13px; text-align: left; color: #657786; font-size: 13px; padding: 10px 20px; line-height: 22px">
+                                        <span th:text="${empleo.direccion}"></span> <br></br>
+                                        <span th:text="${empleo.cierre}"></span>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td align="center"
+                                        style="padding-bottom: 30px; padding-right: 20px">
+                                        <div
+                                                style="background: #fff; color: #3b669a; font-family: 'Arial', Helvetica, sans-serif; font-size: 14px; height: 34px; line-height: 34px; border-radius: 26px; width: 120px; border: 1px solid #3b669a; float: right">
+                                            <a href="https://quipucamayoc.unmsm.edu.pe/PortalEmpleo/#/login/alumno"
+                                               style="text-decoration: none; font-size: 14px; display: block !important; color: #3b669a; font-weight: bold; height: 34px; line-height: 34px">
+                                                Leer más </a>
+                                        </div>
+                                    </td>
+                                </tr>
+
+                                </tbody>
+                            </table>
+
+                        </td>
+                    </tr>
+                    <tr >
+                        <td width="50%" th:each="empleo,iter : ${empleos}" th:if="${iter.index ==4 || iter.index==5}">
+                            <table  align="center" width="100%"
+                                    style="border: 1px solid #f5f5f5; border-radius: 10px">
+                                <tbody>
+                                <tr>
+                                    <td align="right"
+                                        style="color: #657786; font-size: 12px; padding: 15px 20px 25px 20px"th:text="${empleo.tipo}"></td>
+                                </tr>
+                                <tr>
+                                    <td align="center">
+
+                                        <img style="width:200px"
+                                             th:src="'cid:'+${empleo.oid}"
+                                             alt="" />
+
+
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td align="center"
+                                        style="font-size: 13px; text-align: center; color: #3f3d69; font-size: 16px; padding: 20px 0">
+                                        <b> <span th:text="${empleo.puesto}"></span></b>
+                                    </td>
+                                </tr>
+
+                                <tr>
+                                    <td align="left"
+                                        style="font-size: 13px; text-align: left; color: #3f3d69; font-size: 14px; padding: 20px 20px 10px 20px">
+                                        <b> <span th:text="${empleo.empleador}"></span>
+                                        </b>
+                                    </td>
+                                </tr>
+
+                                <tr>
+                                    <td align="left"
+                                        style="font-size: 13px; text-align: left; color: #657786; font-size: 13px; padding: 10px 20px; line-height: 22px">
+                                        <span th:text="${empleo.direccion}"></span> <br></br>
+                                        <span th:text="${empleo.cierre}"></span>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td align="center"
+                                        style="padding-bottom: 30px; padding-right: 20px">
+                                        <div
+                                                style="background: #fff; color: #3b669a; font-family: 'Arial', Helvetica, sans-serif; font-size: 14px; height: 34px; line-height: 34px; border-radius: 26px; width: 120px; border: 1px solid #3b669a; float: right">
+                                            <a href="https://quipucamayoc.unmsm.edu.pe/PortalEmpleo/#/login/alumno"
+                                               style="text-decoration: none; font-size: 14px; display: block !important; color: #3b669a; font-weight: bold; height: 34px; line-height: 34px">
+                                                Leer más </a>
+                                        </div>
+                                    </td>
+                                </tr>
+
+                                </tbody>
+                            </table>
+
+                        </td>
+                    </tr>
+                    </tbody>
+                </table>
+            </td>
+        </tr>
+<!--
+        <tr>
+            <td align="center"
+                style="font-family: 'Arial', Helvetica, sans-serif; color: #3f3d69; font-size: 18px; padding: 0px 40px 20px 40px">
+                <div
+                        style="border-bottom: 1px solid #ccc; height: 30px; width: 300px; margin-bottom: 50px;"></div>
+
+                <b><span th:text="|¿Tienes empleo actualmente, ${nombre}?|"></span></b>
+            </td>
+        </tr>
+        <tr>
+            <td align="center">
+                <table cellpadding="0" cellspacing="0" border="0" align="center"
+                       width="262"
+                       style="color: #000000; width: 222px; height: 48px; text-align: center; border-radius: 12px">
+                    <tbody>
+                    <tr>
+                        <td style="padding-bottom: 10px; padding-right: 30px;">
+                            <div
+                                    style="background: #fff; color: #3b669a; font-family: 'Arial', Helvetica, sans-serif; font-size: 18px; height: 48px; line-height: 48px; border-radius: 26px; width: 130px; border: 1px solid #3b669a">
+                                <a href="#"
+                                   style="text-decoration: none; font-size: 17px; display: block !important; color: #3b669a; font-weight: bold; height: 48px; line-height: 48px">
+                                    Si </a>
+                            </div>
+                        </td>
+                        <td style="padding-bottom: 10px; padding-left: 30px;">
+                            <div
+                                    style="background: #fff; color: #3b669a; font-family: 'Arial', Helvetica, sans-serif; font-size: 18px; height: 48px; line-height: 48px; border-radius: 26px; width: 130px; border: 1px solid #3b669a">
+                                <a href="#"
+                                   style="text-decoration: none; font-size: 17px; display: block !important; color: #3b669a; font-weight: bold; height: 48px; line-height: 48px">
+                                    No </a>
+                            </div>
+                        </td>
+                    </tr>
+                    </tbody>
+
+                </table>
+            </td>
+        </tr>
+
+        <tr>
+            <td align="center"
+                style="font-family: 'Arial', Helvetica, sans-serif; color: #3f3d69; font-size: 18px; padding: 75px 40px 20px 40px">
+                <b>¿De ser afirmativa tu última respuesta,<br> lo
+                    conseguiste mediante este medio
+                </b>
+            </td>
+        </tr>
+
+        <tr>
+            <td align="center">
+                <table cellpadding="0" cellspacing="0" border="0" align="center"
+                       width="262"
+                       style="color: #000000; width: 222px; height: 48px; text-align: center; border-radius: 12px">
+                    <tbody>
+                    <tr>
+                        <td style="padding-bottom: 10px; padding-right: 30px;">
+                            <div
+                                    style="background: #fff; color: #3b669a; font-family: 'Arial', Helvetica, sans-serif; font-size: 18px; height: 48px; line-height: 48px; border-radius: 26px; width: 130px; border: 1px solid #3b669a">
+                                <a href="#"
+                                   style="text-decoration: none; font-size: 17px; display: block !important; color: #3b669a; font-weight: bold; height: 48px; line-height: 48px">
+                                    Si </a>
+                            </div>
+                        </td>
+                        <td style="padding-bottom: 10px; padding-left: 30px;">
+                            <div
+                                    style="background: #fff; color: #3b669a; font-family: 'Arial', Helvetica, sans-serif; font-size: 18px; height: 48px; line-height: 48px; border-radius: 26px; width: 130px; border: 1px solid #3b669a">
+                                <a href="#"
+                                   style="text-decoration: none; font-size: 17px; display: block !important; color: #3b669a; font-weight: bold; height: 48px; line-height: 48px">
+                                    No </a>
+                            </div>
+                        </td>
+                    </tr>
+                    </tbody>
+
+                </table>
+            </td>
+        </tr>
+        --->
+        <tr>
+            <td align="center"
+                style="font-family: 'Arial', Helvetica, sans-serif; color: #3f3d69; font-size: 18px; padding: 25px 40px 20px 40px">
+                <div
+                        style="border-bottom: 1px solid #ccc; height: 30px; width: 300px; margin-bottom: 70px;"></div>
+                <b>Recuerda que aún tienes más empleos esperando<br> por
+                    ti en la web
+                </b>
+            </td>
+        </tr>
+
+        <tr>
+            <td align="center">
+                <table cellpadding="0" cellspacing="0" border="0" align="center"
+                       width="262"
+                       style="color: #000000; width: 222px; height: 48px; text-align: center; border-radius: 12px">
+                    <tbody>
+                    <tr>
+                        <td style="padding-bottom: 50px">
+                            <div
+                                    style="background: #fff; color: #3b669a; font-family: 'Arial', Helvetica, sans-serif; font-size: 18px; height: 48px; line-height: 48px; border-radius: 26px; width: 222px; border: 1px solid #3b669a">
+                                <a href="https://quipucamayoc.unmsm.edu.pe/PortalEmpleo/#/login/alumno" style="text-decoration:none;font-size:17px;display:block!important;color:#3b669a;font-weight:bold;height:48px;line-height:48px">
+                                    Ingresa a la web </a>
+                            </div>
+                        </td>
+                    </tr>
+                    </tbody>
+
+                </table>
+            </td>
+        </tr>
+
+
+
+
+
+        <tr>
+            <td align="center"
+                style="padding-bottom: 30px; padding-top: 40px; font-family: 'Arial', Helvetica; color: #657786; font-size: 13px">
+                Universidad Mayor de San Marcos<br> E-mail: <a
+                    href="mailto:bolsayempleo@unmsm.edu.pe" target="_blank">bolsayempleo@<span
+                    class="il">unmsm</span>.edu.pe
+            </a><br> Teléfono: 619 7000 anexo 7525<br> <br> <b><a
+                    href="http://ogbu.unmsm.edu.pe" target="_blank"
+                    data-saferedirecturl="https://www.google.com/url?q=http://ogbu.unmsm.edu.pe&amp;source=gmail&amp;ust=1576824870798000&amp;usg=AFQjCNEgKtUlIuBugDPzDjC6H7T-lNTH-Q">www.ogbu.<span
+                    class="il">unmsm</span>.edu.pe
+            </a><br> <a href="http://www.unmsm.edu.pe" target="_blank"
+                        data-saferedirecturl="https://www.google.com/url?q=http://www.unmsm.edu.pe&amp;source=gmail&amp;ust=1576824870798000&amp;usg=AFQjCNGVyeuzfyXf-aL3hVB0RaJC-SG8lA">www.<span
+                    class="il">unmsm</span>.edu.pe
+            </a> </b>
+
+
+            </td>
+        </tr>
+
+
+
+
+
+
+
+
+
+        </tbody>
+    </table>
+</div>
+</body>
+</html>

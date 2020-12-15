@@ -3,12 +3,35 @@
   <component name="AutoImportSettings">
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
+  <component name="BranchesTreeState">
+    <expand>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+    </expand>
+    <select />
+  </component>
   <component name="ChangeListManager">
-    <list default="true" id="e8a01097-f43f-4a19-b425-32b877cb5d75" name="Default Changelist" comment="" />
+    <list default="true" id="e8a01097-f43f-4a19-b425-32b877cb5d75" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
   </component>
   <component name="MavenImportPreferences">
     <option name="generalSettings">
@@ -18,13 +41,14 @@
     </option>
   </component>
   <component name="ProjectId" id="1letUQ4W7Ydik4DdaCxlXIu4Y7C" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../Portal de empleo UNMSM/CopiaPortal/Mail/mail-semanl-pem" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
   </component>
   <component name="RecentsManager">
     <key name="CopyClassDialog.RECENTS_KEY">
@@ -44,11 +68,11 @@
         <env name="PEM_FTP_PASS" value="ftpuser" />
         <env name="PEM_FTP_PORT" value="21" />
         <env name="PEM_FTP_HOST" value="192.168.75.75" />
-        <env name="PEM_CORREO_USER" value="portalempleo@unmsm.edu.pe" />
-        <env name="PEM_CORREO_PASS" value="Empleos2020" />
+        <env name="PEM_CORREO_USER" value="alumno.test.quipucamayoc@unmsm.edu.pe" />
+        <env name="PEM_CORREO_PASS" value="R474KU8A" />
       </envs>
       <option name="MAIN_CLASS_NAME" value="hello.Application" />
-      <module name="accessing-data-mysql" />
+      <module name="mail-pem-data" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -65,11 +89,23 @@
     </task>
     <servers />
   </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="oldMeFiltersMigrated" value="true" />
+  </component>
   <component name="WindowStateProjectService">
-    <state x="159" y="14" width="1092" height="714" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1607973954719">
+    <state x="159" y="14" width="1092" height="714" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1608055603704">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="159" y="14" width="1092" height="714" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1366.728@0.0.1366.728" timestamp="1607973954718" />
+    <state x="159" y="14" width="1092" height="714" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1366.728@0.0.1366.728" timestamp="1608055603704" />
     <state x="457" y="211" key="#com.intellij.ide.util.TreeClassChooserDialog" timestamp="1607970860522">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
@@ -82,33 +118,33 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="754" y="114" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1366.728@0.0.1366.728" timestamp="1607971036376" />
-    <state x="595" y="171" key="EnvironmentVariablesDialog" timestamp="1607973953198">
+    <state x="595" y="171" width="521" height="499" key="EnvironmentVariablesDialog" timestamp="1608055602165">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="595" y="171" key="EnvironmentVariablesDialog/0.0.1366.728@0.0.1366.728" timestamp="1607973953198" />
+    <state x="595" y="171" width="521" height="499" key="EnvironmentVariablesDialog/0.0.1366.728@0.0.1366.728" timestamp="1608055602165" />
     <state x="463" y="119" key="FileChooserDialogImpl" timestamp="1607969899441">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="463" y="119" key="FileChooserDialogImpl/0.0.1366.728@0.0.1366.728" timestamp="1607969899441" />
-    <state width="1323" height="188" key="GridCell.Tab.0.bottom" timestamp="1607979679374">
+    <state width="1323" height="249" key="GridCell.Tab.0.bottom" timestamp="1608055074914">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1323" height="188" key="GridCell.Tab.0.bottom/0.0.1366.728@0.0.1366.728" timestamp="1607979679374" />
-    <state width="1323" height="188" key="GridCell.Tab.0.center" timestamp="1607979679374">
+    <state width="1323" height="249" key="GridCell.Tab.0.bottom/0.0.1366.728@0.0.1366.728" timestamp="1608055074914" />
+    <state width="1323" height="249" key="GridCell.Tab.0.center" timestamp="1608055074914">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1323" height="188" key="GridCell.Tab.0.center/0.0.1366.728@0.0.1366.728" timestamp="1607979679374" />
-    <state width="1323" height="188" key="GridCell.Tab.0.left" timestamp="1607979679374">
+    <state width="1323" height="249" key="GridCell.Tab.0.center/0.0.1366.728@0.0.1366.728" timestamp="1608055074914" />
+    <state width="1323" height="249" key="GridCell.Tab.0.left" timestamp="1608055074914">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1323" height="188" key="GridCell.Tab.0.left/0.0.1366.728@0.0.1366.728" timestamp="1607979679374" />
-    <state width="1323" height="188" key="GridCell.Tab.0.right" timestamp="1607979679374">
+    <state width="1323" height="249" key="GridCell.Tab.0.left/0.0.1366.728@0.0.1366.728" timestamp="1608055074914" />
+    <state width="1323" height="249" key="GridCell.Tab.0.right" timestamp="1608055074914">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1323" height="188" key="GridCell.Tab.0.right/0.0.1366.728@0.0.1366.728" timestamp="1607979679374" />
-    <state x="390" y="97" width="585" height="534" key="find.popup" timestamp="1607970430371">
+    <state width="1323" height="249" key="GridCell.Tab.0.right/0.0.1366.728@0.0.1366.728" timestamp="1608055074914" />
+    <state x="390" y="97" width="585" height="534" key="find.popup" timestamp="1608045995224">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="390" y="97" width="585" height="534" key="find.popup/0.0.1366.728@0.0.1366.728" timestamp="1607970430371" />
+    <state x="390" y="97" width="585" height="534" key="find.popup/0.0.1366.728@0.0.1366.728" timestamp="1608045995224" />
   </component>
 </project>
