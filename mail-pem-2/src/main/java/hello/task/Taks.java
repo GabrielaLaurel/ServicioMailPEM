@@ -73,8 +73,8 @@ public class Taks {
 
             if(grupos > 0) {
 
-                if (day.getDayOfWeek().getDisplayName(TextStyle.FULL, Locale.forLanguageTag("ES")).toUpperCase().equals("LUNES")) {
-                    grupo = 1;
+                if (day.getDayOfWeek().getDisplayName(TextStyle.FULL, Locale.forLanguageTag("ES")).toUpperCase().equals("MARTES")) {
+                    grupo = 2;
                     if (alumno.size() > valor()) {
                         
                     LOG.info("INICIO DE ENVIO DE CORREOS DE EMPLEOS DISPONIBLE DEL DIA {} grupo {}", day.getDayOfWeek().getDisplayName(TextStyle.FULL, Locale.forLanguageTag("ES")).toUpperCase(), grupo);
@@ -84,8 +84,8 @@ public class Taks {
                         grupos = -1;
                     }
                 }
-                if (day.getDayOfWeek().getDisplayName(TextStyle.FULL, Locale.forLanguageTag("ES")).toUpperCase().equals("MIÉRCOLES")) {
-                    grupo = 3;
+                if (day.getDayOfWeek().getDisplayName(TextStyle.FULL, Locale.forLanguageTag("ES")).toUpperCase().equals("JUEVES")) {
+                    grupo = 4;
 
                     if (alumno.size() > valor()) {
                        
@@ -99,17 +99,6 @@ public class Taks {
 
                 }
 
-                if (day.getDayOfWeek().getDisplayName(TextStyle.FULL, Locale.forLanguageTag("ES")).toUpperCase().equals("VIERNES")) {
-                    grupo = 5;
-                    if (alumno.size() > valor()) {
-                        LOG.info("INICIO DE ENVIO DE CORREOS DE EMPLEOS DISPONIBLE DEL DIA {} grupo {}", day.getDayOfWeek().getDisplayName(TextStyle.FULL, Locale.forLanguageTag("ES")).toUpperCase(), grupo);
-                        empleoService.MailSemanalGrupo(alumno, tamañoGrupo * 3, tamañoGrupo * 4);
-                        LOG.info("FINAL DE ENVIO DE CORREOS {}", day.getDayOfWeek().getDisplayName(TextStyle.FULL, Locale.forLanguageTag("ES")).toUpperCase());
-
-                    } else {
-                        grupos = -1;
-                    }
-                }
 
 
             }

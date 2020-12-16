@@ -1,0 +1,14 @@
+spring:
+  profiles: 
+    active: ${PEM_ENV}
+server:
+  port : ${PEM_SERVER_PORT}
+  servlet:
+    context-path: ${PEM_SERVER_CONTEXT}
+logging:
+  file: logs/pem.log
+  pattern:
+    console : "%d{yyyy-MM-dd HH:mm:ss.SSS} [%t] %-5level %logger{36}:%L - %msg%n"
+    file: "%d{yyyy-MM-dd HH:mm:ss.SSS} [%t] %-5level %logger{36}:%L - %msg%n"
+    level: INFO
+

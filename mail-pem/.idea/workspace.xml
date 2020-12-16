@@ -24,6 +24,8 @@
   <component name="ChangeListManager">
     <list default="true" id="e8a01097-f43f-4a19-b425-32b877cb5d75" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/hello/task/Taks.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/hello/task/Taks.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/properties/mail/dev.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/properties/mail/dev.properties" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -48,7 +50,7 @@
   </component>
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../mail-pem-2" />
   </component>
   <component name="RecentsManager">
     <key name="CopyClassDialog.RECENTS_KEY">
@@ -122,10 +124,10 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="595" y="171" width="521" height="499" key="EnvironmentVariablesDialog/0.0.1366.728@0.0.1366.728" timestamp="1608055602165" />
-    <state x="463" y="119" key="FileChooserDialogImpl" timestamp="1607969899441">
+    <state x="463" y="119" key="FileChooserDialogImpl" timestamp="1608065618308">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="463" y="119" key="FileChooserDialogImpl/0.0.1366.728@0.0.1366.728" timestamp="1607969899441" />
+    <state x="463" y="119" key="FileChooserDialogImpl/0.0.1366.728@0.0.1366.728" timestamp="1608065618308" />
     <state width="1323" height="249" key="GridCell.Tab.0.bottom" timestamp="1608055074914">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
