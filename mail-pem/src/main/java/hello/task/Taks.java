@@ -78,7 +78,7 @@ public class Taks {
                     if (alumno.size() > valor()) {
                         
                     LOG.info("INICIO DE ENVIO DE CORREOS DE EMPLEOS DISPONIBLE DEL DIA {} grupo {}", day.getDayOfWeek().getDisplayName(TextStyle.FULL, Locale.forLanguageTag("ES")).toUpperCase(), grupo);
-                    empleoService.MailSemanalGrupo(alumno, 0, tamañoGrupo);
+                    empleoService.MailSemanalGrupo(alumno, tamañoGrupo * (grupo - 1), tamañoGrupo * grupo);
                     LOG.info("FINAL DE ENVIO DE CORREOS {}", day.getDayOfWeek().getDisplayName(TextStyle.FULL, Locale.forLanguageTag("ES")).toUpperCase());
                     } else {
                         grupos = -1;
